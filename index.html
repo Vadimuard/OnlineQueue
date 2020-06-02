@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online queue</title>
+</head>
+
+<body>
+    <!-- <header>
+        <nav>
+            <ul class="container navigation">
+                <li>
+                    <a class="navigation__link" href="#">Home</a>
+                </li>
+                <li><a class="navigation__link" href="#">New home</a></li>
+            </ul>
+        </nav>
+    </header> -->
+    <main class="container">
+        <form class="calendar">
+            <div class="calendar__header">
+                Оберіть дату та час, коли ви хочете забронювати послугу
+            </div>
+            <ul class="calendar__content">
+                <li class="calendar__content-item">
+                    <div class="calendar__content-item-header">
+                        Понеділок
+                    </div>
+                    <ul class="calendar__content-item-dates">
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="mondaytime9" name="radio" type="radio" class="radio">
+                            <label for="mondaytime9" class="calendar__content-item-date-descr">
+                                9-00
+                            </label>
+                        </li>
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="mondaytime10" name="radio" type="radio" class="radio">
+                            <label for="mondaytime10" class="calendar__content-item-date-descr">
+                                10-00
+                            </label>
+                        </li>
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="mondaytime11" name="radio" type="radio" class="radio">
+                            <label for="mondaytime11" class="calendar__content-item-date-descr">
+                                11-00
+                            </label>
+                        </li>
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="mondaytime12" name="radio" type="radio" class="radio">
+                            <label for="mondaytime12" class="calendar__content-item-date-descr">
+                                12-00
+                            </label>
+                        </li>
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="mondaytime13" name="radio" type="radio" class="radio">
+                            <label for="mondaytime13" class="calendar__content-item-date-descr">
+                                13-00
+                            </label>
+                        </li>
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="mondaytime14" name="radio" type="radio" class="radio">
+                            <label for="mondaytime14" class="calendar__content-item-date-descr">
+                                14-00
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="calendar__content-item">
+                    <div class="calendar__content-item-header">
+                        Вівторок
+                    </div>
+                    <ul class="calendar__content-item-dates">
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="tuesdaytime9" name="radio" type="radio" class="radio">
+                            <label for="tuesdaytime9" class="calendar__content-item-date-descr">
+                                9-00
+                            </label>
+                        </li>
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="tuesdaytime10" name="radio" type="radio" class="radio">
+                            <label for="tuesdaytime10" class="calendar__content-item-date-descr">
+                                10-00
+                            </label>
+                        </li>
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="tuesdaytime11" name="radio" type="radio" class="radio">
+                            <label for="tuesdaytime11" class="calendar__content-item-date-descr">
+                                11-00
+                            </label>
+                        </li>
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="tuesdaytime12" name="radio" type="radio" class="radio">
+                            <label for="tuesdaytime12" class="calendar__content-item-date-descr">
+                                12-00
+                            </label>
+                        </li>
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="tuesdaytime13" name="radio" type="radio" class="radio">
+                            <label for="tuesdaytime13" class="calendar__content-item-date-descr">
+                                13-00
+                            </label>
+                        </li>
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="tuesdaytime14" name="radio" type="radio" class="radio">
+                            <label for="tuesdaytime14" class="calendar__content-item-date-descr">
+                                14-00
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="calendar__content-item">
+                    <div class="calendar__content-item-header">
+                        Середа
+                    </div>
+                    <ul class="calendar__content-item-dates">
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="wednesdaytime9" name="radio" type="radio" class="radio">
+                            <label for="wednesdaytime9" class="calendar__content-item-date-descr">
+                                9-00
+                            </label>
+                        </li>
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="wednesdaytime10" name="radio" type="radio" class="radio">
+                            <label for="wednesdaytime10" class="calendar__content-item-date-descr">
+                                10-00
+                            </label>
+                        </li>
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="wednesdaytime11" name="radio" type="radio" class="radio">
+                            <label for="wednesdaytime11" class="calendar__content-item-date-descr">
+                                11-00
+                            </label>
+                        </li>
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="wednesdaytime12" name="radio" type="radio" class="radio">
+                            <label for="wednesdaytime12" class="calendar__content-item-date-descr">
+                                12-00
+                            </label>
+                        </li>
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="wednesdaytime13" name="radio" type="radio" class="radio">
+                            <label for="wednesdaytime13" class="calendar__content-item-date-descr">
+                                13-00
+                            </label>
+                        </li>
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="wednesdaytime14" name="radio" type="radio" class="radio">
+                            <label for="wednesdaytime14" class="calendar__content-item-date-descr">
+                                14-00
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="calendar__content" style="justify-content: space-around;">
+                <li class="calendar__content-item">
+                    <div class="calendar__content-item-header">
+                        Четвер
+                    </div>
+                    <ul class="calendar__content-item-dates">
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="time9" name="radio" type="radio" class="radio">
+                            <label for="time9" class="calendar__content-item-date-descr">
+                                9-00
+                            </label>
+                        </li>
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="time10" name="radio" type="radio" class="radio">
+                            <label for="time10" class="calendar__content-item-date-descr">
+                                10-00
+                            </label>
+                        </li>
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="time11" name="radio" type="radio" class="radio">
+                            <label for="time11" class="calendar__content-item-date-descr">
+                                11-00
+                            </label>
+                        </li>
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="time12" name="radio" type="radio" class="radio">
+                            <label for="time12" class="calendar__content-item-date-descr">
+                                12-00
+                            </label>
+                        </li>
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="time13" name="radio" type="radio" class="radio">
+                            <label for="time13" class="calendar__content-item-date-descr">
+                                13-00
+                            </label>
+                        </li>
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="time14" name="radio" type="radio" class="radio">
+                            <label for="time14" class="calendar__content-item-date-descr">
+                                14-00
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+                <li class="calendar__content-item">
+                    <div class="calendar__content-item-header">
+                        П'ятниця
+                    </div>
+                    <ul class="calendar__content-item-dates">
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="fridaytime9" name="radio" type="radio" class="radio">
+                            <label for="fridaytime9" class="calendar__content-item-date-descr">
+                                9-00
+                            </label>
+                        </li>
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="fridaytime10" name="radio" type="radio" class="radio">
+                            <label for="fridaytime10" class="calendar__content-item-date-descr">
+                                10-00
+                            </label>
+                        </li>
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="fridaytime11" name="radio" type="radio" class="radio">
+                            <label for="fridaytime11" class="calendar__content-item-date-descr">
+                                11-00
+                            </label>
+                        </li>
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="fridaytime12" name="radio" type="radio" class="radio">
+                            <label for="fridaytime12" class="calendar__content-item-date-descr">
+                                12-00
+                            </label>
+                        </li>
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="fridaytime13" name="radio" type="radio" class="radio">
+                            <label for="fridaytime13" class="calendar__content-item-date-descr">
+                                13-00
+                            </label>
+                        </li>
+                        <li class="calendar__content-item-date radio-group">
+                            <input id="fridaytime14" name="radio" type="radio" class="radio">
+                            <label for="fridaytime14" class="calendar__content-item-date-descr">
+                                14-00
+                            </label>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </form>
+    </main>
+</body>
+
+</html>
