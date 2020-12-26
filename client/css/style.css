@@ -76,6 +76,20 @@ ul {
   padding: 20px 0;
 }
 
+.submit_btn {
+  padding: 10px 10px;
+  background-color: #52b963;
+  border: 0px;
+  border-radius: 14px;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.submit_btn:hover {
+  background-color: #40814c;
+}
+
 .calendar__content {
   margin-top: 20px;
   display: -webkit-box;
@@ -109,6 +123,10 @@ ul {
   display: block;
   margin: 10px 0;
   position: relative;
+}
+
+.radio-group__unavailable {
+  background-color: rgb(156, 156, 156);
 }
 
 .radio-group label {
@@ -167,6 +185,10 @@ ul {
   color: #fff;
 }
 
+.radio-group input:disabled ~ label {
+  color: #fff;
+}
+
 .radio-group input:checked ~ label:before {
   -webkit-transform: translate(-50%, -50%) scale3d(56, 56, 1);
           transform: translate(-50%, -50%) scale3d(56, 56, 1);
@@ -193,3 +215,7 @@ ul {
   cursor: pointer;
   visibility: hidden;
 }
+
+.radio-group input:disabled ~ label::after {
+  background-color: #fc97b5;
+} 

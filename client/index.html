@@ -9,18 +9,8 @@
 </head>
 
 <body>
-    <!-- <header>
-        <nav>
-            <ul class="container navigation">
-                <li>
-                    <a class="navigation__link" href="#">Home</a>
-                </li>
-                <li><a class="navigation__link" href="#">New home</a></li>
-            </ul>
-        </nav>
-    </header> -->
     <main class="container">
-        <form class="calendar">
+        <form id="form" class="calendar">
             <div class="calendar__header">
                 Оберіть дату та час, коли ви хочете забронювати послугу
             </div>
@@ -162,38 +152,38 @@
                     </div>
                     <ul class="calendar__content-item-dates">
                         <li class="calendar__content-item-date radio-group">
-                            <input id="time9" name="radio" type="radio" class="radio">
-                            <label for="time9" class="calendar__content-item-date-descr">
+                            <input id="thursdaytime9" name="radio" type="radio" class="radio">
+                            <label for="thursdaytime9" class="calendar__content-item-date-descr">
                                 9-00
                             </label>
                         </li>
                         <li class="calendar__content-item-date radio-group">
-                            <input id="time10" name="radio" type="radio" class="radio">
-                            <label for="time10" class="calendar__content-item-date-descr">
+                            <input id="thursdaytime10" name="radio" type="radio" class="radio">
+                            <label for="thursdaytime10" class="calendar__content-item-date-descr">
                                 10-00
                             </label>
                         </li>
                         <li class="calendar__content-item-date radio-group">
-                            <input id="time11" name="radio" type="radio" class="radio">
-                            <label for="time11" class="calendar__content-item-date-descr">
+                            <input id="thursdaytime11" name="radio" type="radio" class="radio">
+                            <label for="thursdaytime11" class="calendar__content-item-date-descr">
                                 11-00
                             </label>
                         </li>
                         <li class="calendar__content-item-date radio-group">
-                            <input id="time12" name="radio" type="radio" class="radio">
-                            <label for="time12" class="calendar__content-item-date-descr">
+                            <input id="thursdaytime12" name="radio" type="radio" class="radio">
+                            <label for="thursdaytime12" class="calendar__content-item-date-descr">
                                 12-00
                             </label>
                         </li>
                         <li class="calendar__content-item-date radio-group">
-                            <input id="time13" name="radio" type="radio" class="radio">
-                            <label for="time13" class="calendar__content-item-date-descr">
+                            <input id="thursdaytime13" name="radio" type="radio" class="radio">
+                            <label for="thursdaytime13" class="calendar__content-item-date-descr">
                                 13-00
                             </label>
                         </li>
-                        <li class="calendar__content-item-date radio-group">
-                            <input id="time14" name="radio" type="radio" class="radio">
-                            <label for="time14" class="calendar__content-item-date-descr">
+                        <li class="thursdaycalendar__content-item-date radio-group">
+                            <input id="thursdaytime14" name="radio" type="radio" class="radio">
+                            <label for="thursdaytime14" class="calendar__content-item-date-descr">
                                 14-00
                             </label>
                         </li>
@@ -243,8 +233,10 @@
                     </ul>
                 </li>
             </ul>
+            <button id="submitBtn" class="submit_btn">Підтвердити вибір</button>
         </form>
     </main>
+    <script src="index.js"></script>
 </body>
 
 </html>
