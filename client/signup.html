@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/auth.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online queue</title>
+</head>
+
+<body>
+    <main class="container">
+        <form id="signUpForm" class="auth">
+            <div class="auth-title">
+                Реєстрація
+            </div>
+            <div class="auth-body">
+                <input id="username" name="username" type="text" class="auth-body__text-input"
+                    placeholder="Введіть username, з яким буде пов'язаний ваш акаунт">
+                <input id="fullname" name="fullname" type="text" class="auth-body__text-input"
+                    placeholder="Введіть ваше ім'я">
+                <input type="password" name="passwd" id="passwd" class="auth-body__text-input"
+                    placeholder="Введіть пароль для доступу до застосунку">
+                <div id="authError" class="auth-body-error nodisplay"></div>
+                <a id="loginBtn" href="/login" class="auth_link">Вже створили акаунт?</a>
+                <button id="submitBtn" class="submit_btn" type="submit">Створити акаунт</button>
+            </div>
+        </form>
+    </main>
+    <script src="js/signup.js"></script>
+</body>

@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, w
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, img {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+.submit_btn {
+  padding: 10px 10px;
+  background-color: #52b963;
+  border: 0px;
+  border-radius: 14px;
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+.submit_btn:hover {
+  background-color: #40814c;
+}
+
+body {
+  background-color: white;
+  font-family: "Oswald", sans-serif;
+  font-size: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.auth {
+    margin-top: 40px;
+}
+
+.auth-title {
+    font-size: 40px;
+}
+
+
+.auth_link {
+    margin: 10px 0;
+    font-size: 18px;
+    color: rgb(145, 53, 53);
+}
+.auth .auth_link {
+    margin-left: 10px;
+}
+
+.auth_link:hover {
+    color: rgb(83, 30, 30);
+}
+
+.auth-body {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-body__text-input {
+    font-family: "Oswald", sans-serif;
+    padding: 10px 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid rgb(67, 133, 127);
+    border-radius: 14px;
+}
+
+.auth-body-error {
+  background-color: rgb(255, 158, 158);
+  color: black;
+  padding: 10px 10px;
+  font-size: 16px;
+  border-radius: 14px;
+}
+
+.nodisplay {
+  display: none;
+}
+
+.display {
+  display: block;
+}

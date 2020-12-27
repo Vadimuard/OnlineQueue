@@ -1,7 +1,7 @@
 const submitBtn = document.getElementById("submitBtn")
 const form = document.getElementById("form")
 
-
+document.cookie = ""
 window.onload = async () => {
     const timenotes = await fetch("/timenotes")
     laodTimeNotes(await timenotes.json())
@@ -18,6 +18,11 @@ const laodTimeNotes = (timenotes) => {
 }
 
 form.addEventListener('submit', async (ev) => {
+    ev.preventDefault()
+    if (document.cookie.length == 0) {
+        window.location = '/login'
+        return
+    }
     const radios = document.getElementsByName("radio")
     for (let i = 0; i < radios.length; i++) {
         r = radios[i]
@@ -33,4 +38,5 @@ form.addEventListener('submit', async (ev) => {
             })
         }
     }
+    window.location.href = '/'
 })

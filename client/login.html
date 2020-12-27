@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/auth.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online queue</title>
+</head>
+
+<body>
+    <main class="container">
+        <form id="signInForm" class="auth">
+            <div class="auth-title">
+                Вхід в систему
+            </div>
+            <div class="auth-body">
+                <input id="username" name="username" type="text" class="auth-body__text-input"
+                    placeholder="Введіть username, з яким пов'язаний ваш акаунт">
+                <input type="password" name="passwd" id="passwd" class="auth-body__text-input"
+                    placeholder="Введіть пароль для доступу до застосунку">
+                <div id="authError" class="auth-body__error nodisplay"></div>
+                <a id="loginBtn" href="/signup" class="auth_link">Ще немає акаунту?</a>
+                <button id="submitBtn" class="submit_btn" type="submit">Увійти</button>
+            </div>
+        </form>
+    </main>
+    <script src="js/login.js"></script>
+</body>
